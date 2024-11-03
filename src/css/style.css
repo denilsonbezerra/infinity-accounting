@@ -121,7 +121,7 @@ body {
     border: 2px solid #CCCCCC;
     border-radius: 50%;
     opacity: 0.75;
-    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, opacity 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .icon:hover,
@@ -158,7 +158,7 @@ body {
     transform: translateY(-50%);
     color: #9CA39E;
     font-size: 20px;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .form-input {
@@ -168,14 +168,14 @@ body {
     background-color: #ECF0F1;
     border: 2px solid #58B78800;
     border-radius: 5px;
-    transition: box-shadow 0.3s ease, border 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .form-input::placeholder {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #7B7B7B;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .form-input:focus {
