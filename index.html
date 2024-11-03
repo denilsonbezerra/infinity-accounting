@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./src/css/style.css">
 
     <title>Create Account</title>
@@ -23,22 +26,31 @@
             <h2>Create Account</h2>
             <div class="social-icons">
                 <a href="https://www.facebook.com" target="_blank" class="icon">
-                    F
+                    <i class="fa-brands fa-facebook-f"></i>
                 </a>
                 <a href="https://accounts.google.com/" target="_blank" class="icon">
-                    G
+                    <i class="fa-brands fa-google"></i>
                 </a>
                 <a href="https://www.linkedin.com" target="_blank" class="icon">
-                    in
+                    <i class="fa-brands fa-linkedin-in"></i>
                 </a>
             </div>
 
             <p>or use your email for registration:</p>
 
             <div class="signup-form">
-                <input type="text" placeholder="Name" class="form-input" required>
-                <input type="email" placeholder="Email" class="form-input" required>
-                <input type="password" placeholder="Password" class="form-input" required>
+                <div class="input-group">
+                    <i class="fa-regular fa-user icon-placeholder"></i>
+                    <input type="text" placeholder="Name" class="form-input" required>
+                </div>
+                <div class="input-group">
+                    <i class="fa-regular fa-envelope icon-placeholder"></i>
+                    <input type="email" placeholder="Email" class="form-input" required>
+                </div>
+                <div class="input-group">
+                    <i class="fa-solid fa-lock icon-placeholder"></i>
+                    <input type="password" placeholder="Password" class="form-input" required>
+                </div>
                 <button class="btn-signup">REGISTER</button>
             </div>
         </div>
