@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./src/css/style.css">
-    
-    <title>Document</title>
+
+    <title>Create Account</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="login-section">
+            <h2>Welcome Back!</h2>
+            <p>To keep connected with us<br>please login with your personal info</p>
+
+            <a href="./src/pages/login.html" class="btn-signin">LOGIN</a>
+        </div>
+
+        <div class="signup-section">
+            <h2>Create Account</h2>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" class="icon">
+                    F
+                </a>
+                <a href="https://accounts.google.com/" target="_blank" class="icon">
+                    G
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" class="icon">
+                    in
+                </a>
+            </div>
+
+            <p>or use your email for registration:</p>
+
+            <div class="signup-form">
+                <input type="text" placeholder="Name" class="form-input" required>
+                <input type="email" placeholder="Email" class="form-input" required>
+                <input type="password" placeholder="Password" class="form-input" required>
+                <button class="btn-signup">REGISTER</button>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
