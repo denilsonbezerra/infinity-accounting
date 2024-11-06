@@ -104,14 +104,15 @@ body {
     background-color: #ECF0F1;
     border: 2px solid #58B78800;
     border-radius: 5px;
-    transition: box-shadow 0.3s ease, border 0.3s ease;
+    transition: all 0.3s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .input input::placeholder {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #7B7B7B;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .input input:focus {
@@ -146,7 +147,7 @@ body {
 .login-footer p a {
     color: #58B788;
     font-weight: bold;
-    transition: color 0.3s ease, opacity 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .forgot-password:hover,
@@ -171,13 +172,16 @@ body {
 
 .login-footer button {
     width: 100%;
-    height: 4.5vh;
+    padding: 1vh;
     border-radius: 5px;
     font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
     background-color: #58B788;
     color: #FFFFFF;
-    transition: background-color 0.3s ease, opacity 0.3s ease;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .login-footer button:hover,
@@ -219,7 +223,7 @@ body {
     color: #9CA39E;
     border: 2px solid #CCCCCC;
     border-radius: 50%;
-    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, opacity 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .icon:hover,
