@@ -35,7 +35,7 @@ body {
 /* Left Section */
 
 .left {
-    width: 40%;
+    width: 45%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -51,7 +51,7 @@ body {
 /* Right Section */
 
 .right {
-    width: 60%;
+    width: 55%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -112,7 +112,6 @@ body {
     font-size: 16px;
     color: #7B7B7B;
     transition: all 0.3s ease;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .input input:focus {

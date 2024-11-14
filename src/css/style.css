@@ -34,7 +34,7 @@ body {
 /* Login Section */
 
 .login-section {
-    width: 40%;
+    width: 45%;
     background-color: #58B788;
     color: #FFFFFF;
     display: flex;
@@ -83,7 +83,7 @@ body {
 /* Register Section */
 
 .register-section {
-    width: 60%;
+    width: 55%;
     padding: 50px;
     background-color: #FFFFFF;
     display: flex;
