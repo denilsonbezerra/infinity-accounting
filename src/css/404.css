@@ -7,6 +7,7 @@
     text-decoration: none;
     border: none;
     outline: none;
+    text-decoration: none;
 }
 
 body {
@@ -28,7 +29,7 @@ body {
     width: 100%;
     height: 10%;
     display: flex;
-
+    padding: 0 30px;
 }
 
 .left-header {
@@ -42,10 +43,34 @@ body {
     display: flex;
     align-items: center;
     gap: 5px;
-    padding-left: 30px;
     font-size: 25px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+}
+
+.logo a {
+    color: #333333;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.logo a:visited {
+    color: #333333;
+}
+
+.logo a:focus,
+.logo a:hover {
+    color: #58B788;
+}
+
+.logo a:hover {
+    text-shadow: 0 0 2px #58B788;
+}
+
+.logo a:active {
+    transform: scale(0.95);
+    opacity: 0.8;
 }
 
 .right-header {
@@ -70,24 +95,47 @@ body {
     transition: all ease 0.3s;
 }
 
-.menu a:hover {
+.menu a:hover,
+.menu a:focus {
     color: #FFFFFF;
     background-color: #58B788;
 }
 
-.menu a:active{
+.menu a:active {
+    transform: scale(0.95);
     opacity: 0.8;
 }
 
 .search {
+    background: none;
     cursor: pointer;
-    padding-right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
     transition: all ease 0.3s;
 }
 
-.search:hover {
-    color: #58B788;
+.search i {
+    color: #000000;
     font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.search:hover i,
+.search:focus i {
+    color: #58B788;
+}
+
+.search:hover i {
+    text-shadow: 0 0 2px #58B788;
+}
+
+.search:active i {
+    transform: scale(0.9);
+    text-shadow: 0 0 2px #58B788;
+    opacity: 0.8;
 }
 
 /* Main Content */
@@ -123,10 +171,13 @@ body {
     padding: 10px 20px;
     border-radius: 25px;
     background-color: #58B788;
-    color: #FFFFFF;
     font-weight: bold;
     font-size: 16px;
     text-align: center;
+}
+
+.right-section .info p {
+    color: #FFFFFF;
 }
 
 .right-section h1 {
@@ -135,38 +186,54 @@ body {
 }
 
 .right-section p {
+    color: #4A4A4A;
     font-size: 20px;
 }
 
 .buttons {
+    display: flex;
+    gap: 7px;
     margin-top: 10px;
+    padding: 0 200px 0 0;
 }
 
-.buttons button {
-    cursor: pointer;
-    width: 200px;
-    height: 40px;
-    font-size: 14px;
+.buttons a {
+    width: 100%;
+    padding: 7px;
+    display: inline-block;
+    padding: 7px;
+    text-align: center;
+    font-size: 18px;
     font-weight: bold;
-    background: none;
-    border: 2px solid #58B788;
+    cursor: pointer;
     border-radius: 5px;
     transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    background-color: #58B788;
+    border: 2px solid #58B788;
 }
 
 #btn-home {
-    background-color: #58B788;
     color: #FFFFFF;
 }
 
-#btn-home:hover,
 #btn-home:focus {
-    opacity: 0.9;
-    box-shadow: 0 0 5px #58B78877;
+    color: #CCCCCC;
+    border-color: #CCCCCC;
+}
+
+#btn-home:hover,
+#btn-home:active {
+    color: #FFFFFF;
+    border-color: #58B788;
+    box-shadow: 0 0 5px #58B788;
 }
 
 #btn-home:active {
-    opacity: 0.75;
+    opacity: 0.9;
+    transform: scale(0.97);
 }
 
 #btn-help {
@@ -177,14 +244,17 @@ body {
 
 #btn-help:hover,
 #btn-help:focus {
-    color: #58B788;
     border-color: #58B788;
+}
+
+#btn-help:hover {
     background-color: #58B7881F;
-    box-shadow: 0 0 5px #58B78877;
+    box-shadow: 0 0 5px #58B788;
 }
 
 #btn-help:active {
-    opacity: 0.75;
+    opacity: 0.9;
+    transform: scale(0.97);
 }
 
 /* Footer */
@@ -194,6 +264,7 @@ body {
     height: 10%;
     display: flex;
     justify-content: end;
+    padding: 0 30px;
 }
 
 .social-connection {
@@ -204,19 +275,17 @@ body {
 }
 
 .social-connection p {
+    color: #333333;
     font-size: 17px;
     font-weight: bold;
 }
 
 .social-icons {
     display: flex;
-    align-items: center;
     gap: 15px;
-    margin-right: 30px;
 }
 
 .icon {
-    margin: 0;
     width: 45px;
     height: 45px;
     font-size: 20px;
@@ -229,17 +298,20 @@ body {
     transition: all 0.3s ease;
 }
 
+.icon:hover {
+    background-color: #58B78833;
+    box-shadow: 0 0 3px #58B788;
+}
+
 .icon:hover,
 .icon:focus {
-    opacity: 1;
     color: #58B788;
     border: 2px solid #58B788;
-    background-color: #58B7881F;
-    box-shadow: 0 0 5px #58B78877;
 }
 
 .icon:active {
-    opacity: 0.75;
+    opacity: 0.8;
+    transform: scale(0.95);
 }
 
 .icon.ig,
