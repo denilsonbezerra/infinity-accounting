@@ -57,19 +57,25 @@
             <p>or use your email for registration:</p>
 
             <div class="register-form">
-                <div class="input-group">
-                    <i class="fa-regular fa-user placeholder-icon"></i>
-                    <input type="text" placeholder="Name" class="form-input" required>
+                <div class="form-inputs">
+                    <label for="name-input">
+                        <i class="fa-regular fa-user placeholder-icon"></i>
+                    </label>
+                    <input type="text" placeholder="Name" class="input" id="name-input" required>
                 </div>
-                <div class="input-group">
-                    <i class="fa-regular fa-envelope placeholder-icon"></i>
-                    <input type="email" placeholder="Email" class="form-input" required>
+                <div class="form-inputs">
+                    <label for="email-input">
+                        <i class="fa-regular fa-envelope placeholder-icon"></i>
+                    </label>
+                    <input type="email" placeholder="Email" class="input" id="email-input" required>
                 </div>
-                <div class="input-group">
-                    <i class="fa-solid fa-lock placeholder-icon"></i>
-                    <input type="password" placeholder="Password" class="form-input" required>
+                <div class="form-inputs">
+                    <label for="password-input">
+                        <i class="fa-solid fa-lock placeholder-icon"></i>
+                    </label>
+                    <input type="password" placeholder="Password" class="input" id="password-input" required>
                 </div>
-                <button class="btn-register">REGISTER</button>
+                <button id="btn-register">REGISTER</button>
             </div>
         </div>
     </div>
