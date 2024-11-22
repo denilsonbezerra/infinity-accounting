@@ -43,13 +43,17 @@
                         <h1>Login</h1>
                     </div>
                     <div class="login-form">
-                        <div class="input">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" placeholder="your.email@example.com">
+                        <div class="form-inputs">
+                            <label for="email">
+                                <i class="fa-regular fa-envelope placeholder-icon"></i>
+                            </label>
+                            <input type="email" placeholder="Email" class="input" id="email" required>
                         </div>
-                        <div class="input">
-                            <label for="password">Password</label>
-                            <input type="password" name="password" id="password" placeholder="•••••••••••">
+                        <div class="form-inputs">
+                            <label for="password">
+                                <i class="fa-solid fa-lock placeholder-icon"></i>
+                            </label>
+                            <input type="password" placeholder="Password" class="input" id="password" required>
                         </div>
                         <div class="tools">
                             <div class="remember-checkbox">
@@ -60,7 +64,7 @@
                         </div>
                     </div>
                     <div class="login-footer">
-                        <button>LOGIN</button>
+                        <a href="./dashboard.html" id="btn-login">LOGIN</a>
                         <p>Don't have an account? <a href="../../index.html">Register</a></p>
                     </div>
                 </section>
