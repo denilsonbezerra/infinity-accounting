@@ -159,10 +159,13 @@ body {
     margin-bottom: 8px;
 }
 
-.placeholder-icon {
+.form-inputs label {
     position: absolute;
     left: 15px;
     top: 50%;
+}
+
+.placeholder-icon {
     transform: translateY(-50%);
     color: #9CA39E;
     font-size: 20px;
