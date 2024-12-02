@@ -10,11 +10,29 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="../css/dashboard.css">
 
+    <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/manifest.json">
+    <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
     <title>Dashboard</title>
 </head>
 
 <body>
-    <main class="container">
+    <div class="container">
         <header class="header">
             <section class="logo-section">
                 <div class="logo">
@@ -35,13 +53,134 @@
             </section>
 
             <section class="menu-section">
-                <i class="fa-solid fa-moon"></i>
-                <i class="fa-solid fa-bell"></i>
+                <button class="menu-button">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="menu-button">
+                    <i class="fa-solid fa-bell"></i>
+                </button>
                 <img src="https://static-00.iconduck.com/assets.00/profile-circle-icon-2048x2048-cqe5466q.png"
                     alt="Profile image" width="40px">
             </section>
         </header>
-    </main>
+
+        <main class="main">
+            <aside class="side-menu">
+                <div class="menu-options">
+                    <button class="option" id="selected">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Dashboard</span>
+                    </button>
+
+                    <button class="option">
+                        <i class="fa-brands fa-wpforms"></i>
+                        <span>Forms</span>
+                    </button>
+
+                    <button class="option">
+                        <i class="fa-regular fa-folder-open"></i>
+                        <span>Cards</span>
+                    </button>
+
+                    <button class="option">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>Charts</span>
+                    </button>
+
+                    <button class="option">
+                        <i class="fa-solid fa-arrow-pointer"></i>
+                        <span>Buttons</span>
+                    </button>
+
+                    <button class="option">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <span>Modals</span>
+                    </button>
+
+                    <button class="option">
+                        <i class="fa-solid fa-table-list"></i>
+                        <span>Tables</span>
+                    </button>
+
+                    <button class="option">
+                        <i class="fa-solid fa-table-columns"></i>
+                        <span>Pages</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                </div>
+
+                <button id="btn-create">Create Account</button>
+            </aside>
+
+            <main class="main-content">
+                <h1>Dashboard</h1>
+
+                <div class="banner">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <span>Star this project on GitHub</span>
+                    </div>
+
+                    <a href="https://github.com/denilsonbezerra/infinity-accounting"
+                    target="_blank">View more</a>
+                </div>
+
+                <section class="cards-section">
+                    <div class="card" id="clients">
+                        <div class="card-left">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-user-group"></i>
+                            </div>
+                        </div>
+
+                        <div class="card-right">
+                            <p>Total Clients</p>
+                            <h3>7779</h3>
+                        </div>
+                    </div>
+
+                    <div class="card" id="balance">
+                        <div class="card-left">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-money-bill"></i>
+                            </div>
+                        </div>
+
+                        <div class="card-right">
+                            <p>Account Balance</p>
+                            <h3>$37,891.00</h3>
+                        </div>
+                    </div>
+
+                    <div class="card" id="sales">
+                        <div class="card-left">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+
+                        <div class="card-right">
+                            <p>New Sales</p>
+                            <h3>273</h3>
+                        </div>
+                    </div>
+
+                    <div class="card" id="contacts">
+                        <div class="card-left">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-comment"></i>
+                            </div>
+                        </div>
+
+                        <div class="card-right">
+                            <p>Pending Contacts</p>
+                            <h3>187</h3>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </main>
+    </div>
 </body>
 
 </html>
