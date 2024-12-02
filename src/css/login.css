@@ -125,9 +125,13 @@ body {
     transition: all 0.3s ease;
 }
 
-.input:focus {
+.input:focus,
+.input:hover {
     border: 2px solid #58B788;
-    box-shadow: 0 0 3px #58B788;
+}
+
+.input:hover {
+    box-shadow: 0 0 5px #58B788;
 }
 
 .tools {
@@ -200,15 +204,14 @@ body {
     border: 2px solid #58B788;
 }
 
-.login-footer #btn-login:focus {
-    color: #CCCCCC;
-    border-color: #CCCCCC;
+.login-footer #btn-login:focus,
+.login-footer #btn-login:hover {
+    color: #58B788;
+    background: none;
+    border-color: #58B788;
 }
 
-.login-footer #btn-login:hover,
-.login-footer #btn-login:active {
-    color: #FFFFFF;
-    border-color: #58B788;
+.login-footer #btn-login:hover {
     box-shadow: 0 0 5px #58B788;
 }
 
