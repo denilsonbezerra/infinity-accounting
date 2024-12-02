@@ -1,5 +1,5 @@
 
-# Interface de Criação de Conta e Login
+# Contabilidades Infinity
 
 ## Índice
 
@@ -11,12 +11,15 @@
 
 ## Descrição do Projeto
 
-A aplicação fornece uma interface front-end simples e intuitiva para a criação de contas e login de usuários, desenvolvida para fins de aprendizado e prática no desenvolvimento front-end.
+A aplicação fornece uma interface front-end intuitiva para a criação de contas, login de usuários e um web-app de contabilidade para empresas, desenvolvida para fins de aprendizado e prática no desenvolvimento full-stack.
 
 ## Interfaces
 
 - Interface de **criação de conta** com campos de nome, email e senha.
 - Interface de **login** para usuários registrados.
+- Interface de **recuperação de senha** para redefinição de credenciais.
+- Página **404 not found** personalizada para erros de navegação.
+- Interface do **dashboard principal** que funciona como a "homepage" do sistema após o login.
 
 ## Tecnologias Utilizadas
 
