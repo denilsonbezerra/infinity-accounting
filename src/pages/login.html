@@ -28,62 +28,63 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 
-    <title>Login</title>
+    <title>Infinity - Login</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="left">
-            <img src="../img/login-animate.svg" alt="">
+        <div class="image-section">
+            <img src="../img/login-animate.svg">
         </div>
-        <div class="right">
-            <div class="card">
-                <section class="login">
-                    <div class="login-header">
-                        <h1>Login</h1>
+
+        <main class="login-section">
+            <h1>Login</h1>
+
+            <div class="login-form">
+                <div class="form-inputs">
+                    <label for="email" class="input-label">
+                        <i class="fa-regular fa-envelope placeholder-icon"></i>
+                    </label>
+
+                    <input type="email" name="email" class="input" id="email" placeholder="Email" required>
+                </div>
+
+                <div class="form-inputs">
+                    <label for="password" class="input-label">
+                        <i class="fa-solid fa-lock placeholder-icon"></i>
+                    </label>
+
+                    <input type="password" name="password" class="input" id="password" placeholder="Password" required>
+                </div>
+
+                <div class="tools">
+                    <div class="remember-checkbox">
+                        <input type="checkbox" name="remember" class="input" id="remember">
+                        <label for="remember" class="input-label">Remember me</label>
                     </div>
-                    <div class="login-form">
-                        <div class="form-inputs">
-                            <label for="email">
-                                <i class="fa-regular fa-envelope placeholder-icon"></i>
-                            </label>
-                            <input type="email" name="email" class="input" id="email" placeholder="Email" required>
-                        </div>
-                        <div class="form-inputs">
-                            <label for="password">
-                                <i class="fa-solid fa-lock placeholder-icon"></i>
-                            </label>
-                            <input type="password" name="password" class="input" id="password" placeholder="Password" required>
-                        </div>
-                        <div class="tools">
-                            <div class="remember-checkbox">
-                                <input type="checkbox" name="remember" id="remember">
-                                <label for="remember">Remember me</label>
-                            </div>
-                            <a href="../pages/reset-password.html" class="forgot-password">Forgot password</a>
-                        </div>
-                    </div>
-                    <div class="login-footer">
-                        <a href="./dashboard.html" id="btn-login">LOGIN</a>
-                        <p>Don't have an account? <a href="../../index.html">Register</a></p>
-                    </div>
-                </section>
-                <section class="options">
-                    <h2>or connect with:</h2>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com" target="_blank" class="icon">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="https://accounts.google.com/" target="_blank" class="icon">
-                            <i class="fa-brands fa-google"></i>
-                        </a>
-                        <a href="https://www.linkedin.com" target="_blank" class="icon">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                    </div>
-                </section>
+
+                    <a href="../pages/reset-password.html" class="forgot-password">Forgot password</a>
+                </div>
+
+                <a href="./dashboard.html" id="btn-login">LOGIN</a>
+
+                <p>Don't have an account? <a href="../../index.html">Register</a></p>
             </div>
-        </div>
+
+            <h2>or connect with:</h2>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://accounts.google.com/" target="_blank" class="icon">
+                    <i class="fa-brands fa-google"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" class="icon">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </main>
     </div>
 </body>
 

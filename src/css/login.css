@@ -14,7 +14,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #F0F2F5;
+    background-color: #F7F7F7;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -32,163 +32,141 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-/* Left Section */
+/* Image Section */
 
-.left {
+.container .image-section {
     width: 45%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
-    background-color: #58B788;
 }
 
-.left img {
+.container .image-section img {
     width: 95%;
 }
 
-/* Right Section */
+/* Login Section */
 
-.right {
+.container .login-section {
+    background-color: #FFFFFF;
     width: 55%;
-    height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #FFFFFF;
+    gap: 15px;
 }
 
-.card {
-    width: 60%;
+.container .login-section h1 {
+    color: #58B788;
+    font-size: 35px;
 }
 
 /* Login Form */
 
-.login {
-    width: 100%;
+.container .login-section .login-form {
+    width: 60%;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    gap: 5px;
 }
 
-.login-header h1 {
-    margin-bottom: 15px;
-    font-size: 35px;
-    color: #58B788;
-}
-
-.login-form {
-    width: 100%;
-}
-
-.form-inputs {
+.container .login-section .login-form .form-inputs {
     position: relative;
-    margin-bottom: 8px;
 }
 
-.form-inputs label {
+.container .login-section .login-form .form-inputs .input-label {
     position: absolute;
     left: 15px;
     top: 50%;
+    cursor: text;
 }
 
-.placeholder-icon {
+.container .login-section .login-form .form-inputs .placeholder-icon {
     transform: translateY(-50%);
-    color: #9CA39E;
+    color: #AFAFAF;
     font-size: 20px;
     transition: all 0.3s ease;
 }
 
-.form-inputs:focus-within .placeholder-icon {
+.container .login-section .login-form .form-inputs:focus-within .placeholder-icon {
     color: #58B788;
-    text-shadow: 0 0 3px rgba(88, 183, 136, 0.5);
 }
 
-.input {
+.container .login-section .login-form .form-inputs .input {
     width: 100%;
     height: 50px;
     padding: 14px 20px 14px 45px;
-    background-color: #ECF0F1;
-    border: 2px solid #58B78800;
+    background-color: #F9F9F9;
+    border: 2px solid #CCCCCC;
     border-radius: 5px;
     transition: all 0.3s ease;
-    color: #4A4A4A;
+    color: #333333;
     font-size: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.input::placeholder {
+.container .login-section .login-form .form-inputs .input::placeholder {
     font-size: 15px;
     color: #7B7B7B;
     transition: all 0.3s ease;
 }
 
-.input:focus,
-.input:hover {
+.container .login-section .login-form .form-inputs .input:focus,
+.container .login-section .login-form .form-inputs .input:hover {
     border: 2px solid #58B788;
 }
 
-.input:hover {
+.container .login-section .login-form .form-inputs .input:hover {
     box-shadow: 0 0 5px #58B788;
 }
 
-.tools {
+.container .login-section .login-form .tools {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 2px 0;
     font-size: 14px;
 }
 
-.remember-checkbox {
+.container .login-section .login-form .tools .remember-checkbox {
     display: flex;
     gap: 5px;
-    color: #4A4A4A;
+    color: #333333;
     align-items: center;
 }
 
-.remember-checkbox,
-.remember-checkbox input,
-.remember-checkbox label {
+.container .login-section .login-form .tools .remember-checkbox,
+.container .login-section .login-form .tools .remember-checkbox .input,
+.container .login-section .login-form .tools .remember-checkbox .input-label {
     cursor: pointer;
 }
 
-.forgot-password,
-.login-footer p a {
+.container .login-section .login-form .tools .forgot-password,
+.container .login-section .login-form p a {
     color: #58B788;
     font-weight: bold;
     transition: all 0.3s ease-out;
 }
 
-.forgot-password:hover,
-.login-footer p a:hover {
-    text-shadow: 0 0 3px #58B78899;
+.container .login-section .login-form .tools .forgot-password:hover,
+.container .login-section .login-form .tools .forgot-password:focus,
+.container .login-section .login-form p a:hover,
+.container .login-section .login-form p a:focus {
+    color: #333333;
 }
 
-
-.forgot-password:focus,
-.login-footer p a:focus {
-    color: #4A4A4A;
-}
-
-.forgot-password:active,
-.login-footer p a:active {
-    color: #58B788;
+.container .login-section .login-form .tools .forgot-password:active,
+.container .login-section .login-form p a:active {
     opacity: 0.8;
 }
 
-.login-footer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
-    gap: 10px;
-    color: #4A4A4A;
-    font-size: 14px;
-}
-
-.login-footer #btn-login {
+#btn-login {
+    color: #FFFFFF;
+    background-color: #58B788;
+    border: 2px solid #58B788;
+    display: block;
     width: 100%;
     padding: 7px;
     text-align: center;
@@ -196,74 +174,90 @@ body {
     font-weight: bold;
     cursor: pointer;
     border-radius: 5px;
-    transition: all 0.3s ease;
     letter-spacing: 0.5px;
     font-family: Arial, Helvetica, sans-serif;
-    color: #FFFFFF;
-    background-color: #58B788;
-    border: 2px solid #58B788;
+    transition: all 0.3s ease;
 }
 
-.login-footer #btn-login:focus,
-.login-footer #btn-login:hover {
+#btn-login:focus,
+#btn-login:hover {
     color: #58B788;
     background: none;
     border-color: #58B788;
 }
 
-.login-footer #btn-login:hover {
+#btn-login:hover {
+    background-color: #58B7881F;
     box-shadow: 0 0 5px #58B788;
 }
 
-.login-footer #btn-login:active {
+#btn-login:active {
     opacity: 0.9;
     transform: scale(0.97);
 }
 
 /* Social Icons */
 
-.options {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.options h2 {
-    margin-top: 15px;
+.container .login-section h2 {
     color: #58B788;
 }
 
-.social-icons {
+.container .login-section .social-icons {
     display: flex;
     gap: 15px;
-    margin-top: 15px;
 }
 
-.icon {
+.container .login-section .social-icons .icon {
     width: 45px;
     height: 45px;
     font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #9CA39E;
+    color: #AFAFAF;
     border: 2px solid #CCCCCC;
     border-radius: 50%;
     transition: all 0.3s ease;
 }
 
-.icon:hover {
-    background-color: #58B78833;
+.container .login-section .social-icons .icon:hover {
+    background-color: #58B7881F;
     box-shadow: 0 0 3px #58B788;
 }
 
-.icon:hover,
-.icon:focus {
+.container .login-section .social-icons .icon:hover,
+.container .login-section .social-icons .icon:focus {
     color: #58B788;
     border: 2px solid #58B788;
 }
 
-.icon:active {
+.container .login-section .social-icons .icon:active {
     opacity: 0.8;
     transform: scale(0.95);
+}
+
+/* Responsiveness */
+
+@media (max-width: 640px) {
+    .container .login-section {
+        width: 100%;
+    }
+}
+
+@media (max-width: 990px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        flex-direction: column;
+        overflow-y: auto;
+    }
+
+    .container .image-section {
+        display: none;
+    }
+
+    .container .login-section {
+        width: 100%;
+    }
 }

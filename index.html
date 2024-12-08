@@ -28,7 +28,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 
-    <title>Create Account</title>
+    <title>Infinity - Create Account</title>
 </head>
 
 <body>
@@ -40,8 +40,39 @@
             <a href="./src/pages/login.html" id="btn-login">LOGIN</a>
         </div>
 
-        <div class="register-section">
-            <h2>Create Account</h2>
+        <main class="register-section">
+            <h1>Create Account</h1>
+
+            <div class="register-form">
+                <div class="form-inputs">
+                    <label for="name" class="input-label">
+                        <i class="fa-regular fa-user placeholder-icon"></i>
+                    </label>
+
+                    <input type="text" name="name" class="input" id="name" placeholder="Name" required>
+                </div>
+
+                <div class="form-inputs">
+                    <label for="email" class="input-label">
+                        <i class="fa-regular fa-envelope placeholder-icon"></i>
+                    </label>
+
+                    <input type="email" name="email" class="input" id="email" placeholder="Email" required>
+                </div>
+
+                <div class="form-inputs">
+                    <label for="password" class="input-label">
+                        <i class="fa-solid fa-lock placeholder-icon"></i>
+                    </label>
+
+                    <input type="password" name="password" class="input" id="password" placeholder="Password" required>
+                </div>
+
+                <button id="btn-register">REGISTER</button>
+            </div>
+
+            <h2>or connect with:</h2>
+
             <div class="social-icons">
                 <a href="https://www.facebook.com" target="_blank" class="icon">
                     <i class="fa-brands fa-facebook-f"></i>
@@ -53,31 +84,7 @@
                     <i class="fa-brands fa-linkedin-in"></i>
                 </a>
             </div>
-
-            <p>or use your email for registration:</p>
-
-            <div class="register-form">
-                <div class="form-inputs">
-                    <label for="name">
-                        <i class="fa-regular fa-user placeholder-icon"></i>
-                    </label>
-                    <input type="text" name="name" class="input" id="name" placeholder="Name" required>
-                </div>
-                <div class="form-inputs">
-                    <label for="email">
-                        <i class="fa-regular fa-envelope placeholder-icon"></i>
-                    </label>
-                    <input type="email" name="email" class="input" id="email" placeholder="Email" required>
-                </div>
-                <div class="form-inputs">
-                    <label for="password">
-                        <i class="fa-solid fa-lock placeholder-icon"></i>
-                    </label>
-                    <input type="password" name="password" class="input" id="password" placeholder="Password" required>
-                </div>
-                <button id="btn-register">REGISTER</button>
-            </div>
-        </div>
+        </main>
     </div>
 </body>
 
