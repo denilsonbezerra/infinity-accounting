@@ -193,7 +193,6 @@ body {
 
 .container .main .side-menu .menu-options .option:focus,
 .container .main .side-menu .menu-options .option:hover,
-#selected-option:focus,
 #selected-option:hover {
     background-color: #58B788;
     color: #FFFFFF;
