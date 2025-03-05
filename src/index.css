@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+*:focus {
+    outline-color: #58B785;
+}

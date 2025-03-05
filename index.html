@@ -1,91 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="./src/css/style.css">
-
-    <link rel="icon" type="image/png" sizes="192x192" href="./src/img/favicon/android-icon-192x192.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./src/img/favicon/apple-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./src/img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./src/img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./src/img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./src/img/favicon/apple-icon-114x114.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./src/img/favicon/favicon-96x96.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./src/img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./src/img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./src/img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="./src/img/favicon/apple-icon-57x57.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./src/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./src/img/favicon/manifest.json">
-    <meta name="msapplication-TileImage" content="./src/img/favicon/ms-icon-144x144.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
-
-    <title>Infinity - Create Account</title>
-</head>
-
-<body>
-    <div class="container">
-        <div class="login-section">
-            <h2>Welcome Back!</h2>
-            <p>To keep connected with us<br>please login with your personal info</p>
-
-            <a href="./src/pages/login.html" id="btn-login">LOGIN</a>
-        </div>
-
-        <main class="register-section">
-            <h1>Create Account</h1>
-
-            <div class="register-form">
-                <div class="form-inputs">
-                    <label for="name" class="input-label">
-                        <i class="fa-regular fa-user placeholder-icon"></i>
-                    </label>
-
-                    <input type="text" name="name" class="input" id="name" placeholder="Name" required>
-                </div>
-
-                <div class="form-inputs">
-                    <label for="email" class="input-label">
-                        <i class="fa-regular fa-envelope placeholder-icon"></i>
-                    </label>
-
-                    <input type="email" name="email" class="input" id="email" placeholder="Email" required>
-                </div>
-
-                <div class="form-inputs">
-                    <label for="password" class="input-label">
-                        <i class="fa-solid fa-lock placeholder-icon"></i>
-                    </label>
-
-                    <input type="password" name="password" class="input" id="password" placeholder="Password" required>
-                </div>
-
-                <button id="btn-register">REGISTER</button>
-            </div>
-
-            <h2>or connect with:</h2>
-
-            <div class="social-icons">
-                <a href="https://www.facebook.com" target="_blank" class="icon">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a href="https://accounts.google.com/" target="_blank" class="icon">
-                    <i class="fa-brands fa-google"></i>
-                </a>
-                <a href="https://www.linkedin.com" target="_blank" class="icon">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-            </div>
-        </main>
-    </div>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/" href="./src/assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinity</title>
+  </head>
+  <body style="overflow: hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
